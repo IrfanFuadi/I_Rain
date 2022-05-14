@@ -294,10 +294,32 @@ body{
         bottom: 10px;
     }
 }
+
+@media screen and (max-width: 440px){
+    .kolom2{
+        height: 100px;
+        margin-top: -0%;
+        margin-left: -75%;
+    }
+}
+@media screen and (max-width: 414px){
+    .kolom2{
+        height: 100px;
+        margin-top: -0%;
+        margin-left: -80%;
+    }
+}
 @media screen and (max-width: 412px){
     .kolom2{
         height: 100px;
         margin-top: -0%;
         margin-left: -82%;
+    }
+}
+@media screen and (max-width: 375px){
+    .kolom2{
+        height: 100px;
+        margin-top: -20%;
+        margin-left: -60%;
     }
 }
