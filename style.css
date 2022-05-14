@@ -214,6 +214,7 @@ body{
     }
     
     .kolom1{
+        border: 1px solid white;
         margin-top: 120%;
         margin-left: 5%;
         z-index: 1;
@@ -292,5 +293,13 @@ body{
     #copyright .wrapper{
         margin-left: 20px;
         bottom: 10px;
+    }
+}
+@media screen and (max-width: 412px){
+    .kolom2{
+        border: 1px solid white;
+        height: 100px;
+        margin-top: -0%;
+        margin-left: -82%;
     }
 }
