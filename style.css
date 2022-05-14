@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Koulen&family=Mulish:ital,wght@0,400;1,300&family=Poppins:wght@200;300;400;500;600&family=Righteous&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: #181c1f;
+
+}
+.container{
+    display: flex;
+    position: relative;
+}
+.kolom1{
+    padding-left: 30px;
+    padding-top: 20%;
+    flex: 0 0 40%;
+    position: relative;
+    color: rgb(227, 227, 227);
+    width: 150px;
+    height: auto;
+    flex: 0 0 50%;
+}
+.kolom1 h1{
+    font-family: 'Koulen', cursive;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: -1px;
+}
+.kolom1 p{
+    margin-top: -10px;
+    font-family: 'open-sans', cursive;
+    font-weight: 0;
+    padding-top: 1px;
+    font-weight: 100;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+.kolom1 audio.musik{
+    padding: 10px 10px 10px 0;
+    margin-top: -10px;
+}
+.kolom2{
+    margin-left: 50px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-left: 10px;
+    flex: 0 0 30%;
+    display: block;
+    position: relative;
+    
+}
+.kolom2 .cloud{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    background: white;
+    border-radius: 100px;
+}
+.kolom2 .cloud::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 40px;
+    width: 110px;
+    height: 110px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 100px 0 0 30px white;
+    transition: right 2s, left 2s;
+}
+.kolom2 .ucapan{
+    width: 300px;
+    z-index: -1;
+    border-bottom: 2px solid white;
+    top: 200px;
+    margin-left: 22px;
+    text-align: center;
+    color: rgb(227, 227, 227);
+    font-family: 'Koulen', cursive;
+    position: absolute;
+    font-size: 20px;
+}
+.kolom2 .rain{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+    transition: right 2s, left 2s;
+}
+.kolom2 .rain span{
+    position: relative;
+    bottom: 0px;
+    width: 5px;
+    height: 5px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: white;
+    animation: animate 5s linear infinite;
+    animation-duration: calc(15s / var(--i));
+    transform-origin: bottom;
+    transition: left 3s;
+}
+.kolom2 .cloud::before:hover{
+    bottom: 50px;
+}
+.kolom2 .cloud:hover{
+    bottom: 50px;
+}
+.kolom3{
+    margin-left: 40px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 10px;
+    flex: 0 0 30%;
+    display: block;
+    position: relative;
+    
+}
+.kolom3 .cloud2{
+    position: relative;
+    top: 40px;
+    width: 200px;
+    height: 60px;
+    background: white;
+    border-radius: 100px;
+}
+.kolom3 .cloud2::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 60px 0 0 20px white;
+}
+.kolom3 .rain2{
+    
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 5px;
+    height: 200px;
+}
+.kolom3 .rain2 span{
+    position: relative;
+    bottom: 10px;
+    width: 3px;
+    height: 3px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background: white;
+    animation: animate 5s linear infinite;
+    animation-duration: calc(15s / var(--i));
+    transform-origin: bottom;
+}
+.kolom2 .text{
+    display: none;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    color: white;
+    padding: 0 20px;
+}
+.kolom2 .text span{
+    display: none;
+    position: relative;
+    bottom: 20px;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    animation: animate  10s linear infinite;
+    animation-duration: calc(60s / var(--i));
+    transform-origin: bottom;
+}
+#copyright .wrapper{
+    left: 20px;
+    bottom: 10px;
+    color: white;
+    position: absolute;
+    z-index: 3;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translateY(0) scale(1);
+    }
+    70%
+    {
+        transform: translateY(298px) scale(1);
+    }
+    100%
+    {
+        transform: translateY(298px) scale(0);
+    }
+}
+
+@media screen and (max-width: 636px){
+    .container{
+        display:contents;
+        position: relative;
+        padding: 0;
+    }
+    
+    .kolom1{
+        margin-top: 120%;
+        margin-left: 5%;
+        z-index: 1;
+        padding-top: 0%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+        position: relative;
+        color: rgb(227, 227, 227);
+        height: 100px;
+        flex: 0 0 50%;
+    }
+    .kolom1 p{
+        padding-bottom: 10px;
+    }
+    .kolom2{
+        height: 100px;
+        margin-top: -10%;
+        margin-left: -90%;
+    }
+    .kolom2 .cloud{
+        width: 150px;
+        height: 50px;
+    }
+    .kolom2 .cloud::before{
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        box-shadow: 50px 0 0 20px white;
+    }
+    .kolom2 .rain span{
+        left: -10px;
+        height: 4px;
+        width: 4px;
+        margin: 0 1px;
+    }
+    .kolom3{
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+    .kolom3 .cloud2{
+        width: 90px;
+        height: 30px;
+    }
+    .kolom3 .cloud2::before{
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        box-shadow: 30px 0 0 10px white;
+    }
+    .kolom3 .rain2 span{
+        bottom: -25px;
+        left: -5px;
+        height: 2px;
+        width: 2px;
+        margin: 0 1px;
+    }
+    .kolom2 .ucapan{
+        margin-top: -25px;
+        margin-left: 20px;
+        width: 110px;
+        position: absolute;
+        height: 20px;
+        font-size: 15px;
+        padding-bottom: 1px;
+    }
+    #copyright .wrapper{
+        margin-left: 20px;
+        bottom: 10px;
+    }
+}
